@@ -102,9 +102,13 @@ li a:hover {
     padding: 20px;
 }
 
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
 .anime {
-    margin: 20px;
-    width: 200px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -136,9 +140,13 @@ li a:hover {
     padding: 20px;
 }
 
+.featured-anime-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
 .featured-anime {
-    margin: 20px;
-    width: 300px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -167,16 +175,5 @@ li a:hover {
 /* Responsive design */
 
 @media (max-width: 768px) {
-    .anime-list {
-        flex-direction: column;
-    }
-    .anime {
-        margin: 10px;
-    }
-    .featured-animes {
-        padding: 10px;
-    }
-    .featured-anime {
-        margin: 10px;
-    }
-}
+    .anime-grid {
+        grid-template-columns: repeat(2, 1fr
