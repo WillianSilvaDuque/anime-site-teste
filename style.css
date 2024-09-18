@@ -19,6 +19,9 @@ header {
     background-color: #333;
     padding: 1em;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header nav {
@@ -70,23 +73,69 @@ select {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 20px;
 }
 
 .anime {
     margin: 20px;
     width: 200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .anime img {
     width: 100%;
     height: 150px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 .anime h2 {
     font-size: 18px;
     margin-top: 10px;
+    padding: 10px;
+}
+
+.anime p {
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Featured animes styles */
+
+.featured-animes {
+    padding: 20px;
+}
+
+.featured-anime {
+    margin: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured-anime img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.featured-anime h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.featured-anime p {
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
 }
 
 /* Responsive design */
@@ -96,6 +145,12 @@ select {
         flex-direction: column;
     }
     .anime {
+        margin: 10px;
+    }
+    .featured-animes {
+        padding: 10px;
+    }
+    .featured-anime {
         margin: 10px;
     }
 }
