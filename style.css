@@ -15,25 +15,58 @@ body {
 
 /* Navigation menu */
 
-nav ul {
+.nav-bar {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
 }
 
-nav li {
+.nav-bar li {
   margin-right: 20px;
 }
 
-nav a {
-  color: #337ab7;
+.nav-link {
+  color: #fff;
   text-decoration: none;
 }
 
-nav a:hover {
-  color: #23527c;
+.nav-link:hover {
+  color: #ccc;
+}
+
+.nav-search {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.nav-search input[type="search"] {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.nav-search-btn {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-search-btn:hover {
+  background-color: #23527c;
 }
 
 /* Anime list section */
@@ -58,23 +91,14 @@ nav a:hover {
   border-bottom: 1px solid #ddd;
 }
 
-.anime-list img {
+.anime-img {
   width: 100px;
   height: 100px;
   margin-right: 20px;
   border-radius: 10px;
 }
 
-.anime-list h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.anime-list p {
-  margin-bottom: 20px;
-}
-
-.anime-list button {
+.anime-btn {
   background-color: #337ab7;
   color: #fff;
   border: none;
@@ -83,7 +107,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-.anime-list button:hover {
+.anime-btn:hover {
   background-color: #23527c;
 }
 
@@ -109,13 +133,13 @@ nav a:hover {
   border-bottom: 1px solid #ddd;
 }
 
-.news-list h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+.news-author {
+  color: #337ab7;
+  text-decoration: none;
 }
 
-.news-list p {
-  margin-bottom: 20px;
+.news-author:hover {
+  color: #23527c;
 }
 
 /* Footer */
@@ -125,4 +149,21 @@ footer {
   color: #fff;
   padding: 10px;
   text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #ccc;
 }
