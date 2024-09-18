@@ -1,179 +1,113 @@
-/* Global styles */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
 }
 
-/* Header styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
 header {
-    background-color: #333;
-    padding: 1em;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
 }
 
 .logo {
-    margin-right: 20px;
-}
-
-.logo img {
-    width: 50px;
     height: 50px;
-    border-radius: 50%;
+    float: left;
 }
 
-ul {
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    float: right;
 }
 
-li {
-    margin-right: 20px;
+nav li {
+    display: inline-block;
+    margin-left: 20px;
 }
 
-li a {
-    color: #fff;
+nav a {
     text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
-
-li a:hover {
-    color: #ccc;
-}
-
-/* Hero section styles */
 
 .hero {
-    background-image: linear-gradient(to bottom, #333, #444);
-    background-size: 100% 300px;
-    background-position: 0% 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
-
-.hero-content {
+    background-color: #fff;
+    padding: 50px 0;
     text-align: center;
 }
 
-.hero-content h1 {
-    font-size: 36px;
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.popular-animes,
+.featured-animes {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.anime-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.anime-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
     margin-bottom: 10px;
 }
 
-.hero-content p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.hero-content button {
-    background-color: #fff;
+.anime-card h3 {
+    margin-bottom: 5px;
     color: #333;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
 }
 
-/* Anime list styles */
-
-.anime-list {
-    padding: 20px;
-}
-
-.anime-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-}
-
-.anime {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.anime img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-}
-
-.anime h3 {
-    font-size: 18px;
-    margin-top: 10px;
-    padding: 10px;
-}
-
-.anime p {
-    padding: 10px;
-    font-size: 14px;
+.anime-card p {
+    margin-bottom: 10px;
     color: #666;
 }
 
-/* Featured animes styles */
-
-.featured-animes {
-    padding: 20px;
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
-
-.featured-anime-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-}
-
-.featured-anime {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.featured-anime img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-}
-
-.featured-anime h3 {
-    font-size: 20px;
-    margin-top: 10px;
-    padding: 10px;
-}
-
-.featured-anime p {
-    padding: 10px;
-    font-size: 14px;
-    color: #666;
-}
-
-/* Responsive design */
-
-@media (max-width: 768px) {
-    .anime-grid {
-        grid-template-columns: repeat(2, 1fr
