@@ -1,186 +1,307 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Coldy Animes</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title>BetterAnime 2</title>
-    <link rel="shortcut icon" href="img/Anya.ico" type="image/x-icon">
 </head>
 <body>
-    
-
-    <div class="nome cor1 text-center">
-        <h1>BetterAnime 2</h1>
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-light cor1">
-        <a class="navbar-brand" href="#">BA2</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Filmes</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Categoria
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#romance">Animes Recentes</a>
-                <a class="dropdown-item" href="#comedia">Animes mais populares</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#thriller">Animes divulgados na semana</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Configs</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-
-    <br></br>
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="img/anime.png" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="img/MHA.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="img/snk.png" alt="Third slide">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-      <br>
-
-    <div class="container text-light cor1" id="romance">
-        <h2>• Animes Recentes</h2>
-    </div>
-    
-    <br></br>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <a href="chainsawMan.html">
-                    <img src="img/chainsawMan.jpeg" class="img-fluid" alt=". . .">
-                </a>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Better Anime">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">Animes</a></li>
+                    <li><a href="#">Aplicativo</a></li>
+                    <li><a href="#">BetterRank</a></li>
+                    <li><a href="#">Calendário</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button><img src="search-icon.png" alt="Search"></button>
             </div>
-            <div class="col-md-3">
-                <a href="HxH.html">
-                    <img src="img/HxH.jpg" class="img-fluid" alt=". . .">
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="Re:Zero.html">
-                    <img src="img/Re:Zero.jpg" class="img-fluid" alt=". . .">
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="kuorkoNoBaska.html">
-                    <img src="img/kuorkoNoBaska.jpeg" class="img-fluid" alt=". . .">
-                </a>
+            <div class="profile">
+                <img src="profile.png" alt="Profile">
             </div>
         </div>
-    </div>
+    </header>
 
-    <br></br>
-
-    <div class="container cor1 text-light" id="comedia">
-        <h2>• Animes mais populares</h2>
-    </div>
-
-    <br></br>
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <a href="Overlord.html">
-                    <img src="img/Overlord.jpg" class="img-fluid" alt=". . .">
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="OnePiece.html">
-                    <img src="img/OnePiece.jpeg" class="img-fluid" alt=". . .">
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="DeathNote.html">
-                    <img src="img/DeathNote.webp" class="img-fluid" alt=". . .">
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="Fate.html">
-                    <img src="img/Fate.webp" class="img-fluid" alt=". . .">
-                </a>
+    <section class="featured">
+        <div class="container">
+            <h2>Assista agora aos Animes mais vistos da Season! Somos Better!</h2>
+            <div class="featured-content">
+                <img src="featured-anime.png" alt="Cyberpunk: Edgerunners">
+                <div class="featured-info">
+                    <h3>Cyberpunk: Edgerunners</h3>
+                    <p>Para sobreviver em uma realidade distópica na qual a corrupção e os implantes cibernéticos controlam tudo, um jovem talentoso e impulsivo decide se tornar um mercenário.</p>
+                    <button>Assistir</button>
+                    <a href="#" class="see-more">Ver mais</a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <br></br>
+    <section class="latest-releases">
+        <div class="container">
+            <h2>Últimos Lançamentos</h2>
+            <div class="latest-releases-grid">
+                <div class="anime-card">
+                    <img src="anime-card-1.png" alt="Chainsaw Man">
+                    <div class="anime-info">
+                        <h4>Chainsaw Man</h4>
+                        <p>Episódio 11</p>
+                        <p>LEG FULL HD</p>
+                        <p>24min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-2.png" alt="Cool Doji Danshi">
+                    <div class="anime-info">
+                        <h4>Cool Doji Danshi</h4>
+                        <p>Episódio 11</p>
+                        <p>LEG FULL HD</p>
+                        <p>24min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-3.png" alt="Perdi o nome desse kk">
+                    <div class="anime-info">
+                        <h4>Perdi o nome desse kk</h4>
+                        <p>Episódio 12</p>
+                        <p>LEG FULL HD</p>
+                        <p>24min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-4.png" alt="Shinobi no Ittoki">
+                    <div class="anime-info">
+                        <h4>Shinobi no Ittoki</h4>
+                        <p>Episódio 12</p>
+                        <p>LEG FULL HD</p>
+                        <p>Final</p>
+                        <p>24min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-5.png" alt="Fuufu Ijou, Kobito Miman...">
+                    <div class="anime-info">
+                        <h4>Fuufu Ijou, Kobito Miman...</h4>
+                        <p>Episódio 08</p>
+                        <p>DUB FULL HD</p>
+                        <p>24min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-6.png" alt="Fuufu Ijou, Kobito Miman...">
+                    <div class="anime-info">
+                        <h4>Fuufu Ijou, Kobito Miman...</h4>
+                        <p>Episódio 11</p>
+                        <p>LEG FULL HD</p>
+                        <p>24min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-7.png" alt="IDOLISH7: Third Beat!...">
+                    <div class="anime-info">
+                        <h4>IDOLISH7: Third Beat!...</h4>
+                        <p>Episódio 12</p>
+                        <p>LEG FULL HD</p>
+                        <p>24min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-8.png" alt="Fumetsu no Anata e 2nd...">
+                    <div class="anime-info">
+                        <h4>Fumetsu no Anata e 2nd...</h4>
+                        <p>Episódio 06</p>
+                        <p>DUB FULL HD</p>
+                        <p>24min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-9.png" alt="Fumetsu no Anata, e 2nd...">
+                    <div class="anime-info">
+                        <h4>Fumetsu no Anata, e 2nd...</h4>
+                        <p>Episódio 09</p>
+                        <p>LEG FULL HD</p>
+                        <p>24min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-10.png" alt="Blue Lock">
+                    <div class="anime-info">
+                        <h4>Blue Lock</h4>
+                        <p>Episódio 11</p>
+                        <p>LEG FULL HD</p>
+                        <p>24min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-11.png" alt="Spy x Family Part 2">
+                    <div class="anime-info">
+                        <h4>Spy x Family Part 2</h4>
+                        <p>Episódio 12</p>
+                        <p>LEG FULL HD</p>
+                        <p>24min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-12.png" alt="Boruto: Naruto Next Generations">
+                    <div class="anime-info">
+                        <h4>Boruto: Naruto Next Generations</h4>
+                        <p>Episódio 280</p>
+                        <p>LEG FULL HD</p>
+                        <p>24min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-13.png" alt="Bleach">
+                    <div class="anime-info">
+                        <h4>Bleach</h4>
+                        <p>Episódio 11</p>
+                        <p>LEG FULL HD</p>
+                        <p>24min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-14.png" alt="Boku no Hero Academia 6">
+                    <div class="anime-info">
+                        <h4>Boku no Hero Academia 6</h4>
+                        <p>Episódio 11</p>
+                        <p>DUB FULL HD</p>
+                        <p>24min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-15.png" alt="Digimon Ghost Game">
+                    <div class="anime-info">
+                        <h4>Digimon Ghost Game</h4>
+                        <p>Episódio 56</p>
+                        <p>LEG FULL HD</p>
+                        <p>24min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-16.png" alt="One Piece">
+                    <div class="anime-info">
+                        <h4>One Peice</h4>
+                        <p>Episódio 1045</p>
+                        <p>LEG FULL HD</p>
+                        <p>24min</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="see-more">Ver mais</a>
+        </div>
+    </section>
 
-    <div class="container cor1 text-light" id="thriller">
-        <h2>• Animes divulgados na semana</h2>
-    </div>
-
-    <br></br>
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <a href="shingeki.html">
-                    <img src="img/shingeki.jpeg" class="img-fluid" alt=". . .">
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="jujutsu.html">
-                    <img src="img/jujutsu.jpg" class="img-fluid" alt=". . .">
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="OnePunch.html">
-                    <img src="img/OnePunch.jpeg" class="img-fluid" alt=". . .">
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="Naruto.html">
-                    <img src="img/Naruto.jpg" class="img-fluid" alt=". . .">
-                </a>
+    <section class="latest-releases">
+        <div class="container">
+            <h2>Últimos Lançamentos</h2>
+            <div class="latest-releases-grid">
+                <div class="anime-card">
+                    <img src="anime-card-17.png" alt="Xian Wang de Richang Shenghuo 2">
+                    <div class="anime-info">
+                        <h4>Xian Wang de Richang Shenghuo 2</h4>
+                        <p>Episódios-12</p>
+                        <p>LEG FULL HD</p>
+                        <p>24min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-18.png" alt="Isekai Quartet Movie: Another World">
+                    <div class="anime-info">
+                        <h4>Isekai Quartet Movie: Another World</h4>
+                        <p>Filme-th 52min</p>
+                        <p>6.10</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-19.png" alt="Nanatsu no Taizai: Ensa no Edinburgh">
+                    <div class="anime-info">
+                        <h4>Nanatsu no Taizai: Ensa no Edinburgh</h4>
+                        <p>Filme-52min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-20.png" alt="Lookism">
+                    <div class="anime-info">
+                        <h4>Lookism</h4>
+                        <p>Episódios-08</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-21.png" alt="Romantic Killer">
+                    <div class="anime-info">
+                        <h4>Romantic Killer</h4>
+                        <p>Episódio-12</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-22.png" alt="Chainsaw Man">
+                    <div class="anime-info">
+                        <h4>Chainsaw Man</h4>
+                        <p>Episódios-12</p>
+                        <p>LEG FULL HD</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-23.png" alt="Dragon Ball Super: Super Hero">
+                    <div class="anime-info">
+                        <h4>Dragon Ball Super: Super Hero</h4>
+                        <p>Filme-th 99min</p>
+                        <p>6.11</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-24.png" alt="Karakai Jouzu no Takagi-san Movie">
+                    <div class="anime-info">
+                        <h4>Karakai Jouzu no Takagi-san Movie</h4>
+                        <p>Filme-th 13min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-25.png" alt="Gotoubun no Hanayome Movie">
+                    <div class="anime-info">
+                        <h4>Gotoubun no Hanayome Movie</h4>
+                        <p>Filme-2h 16min</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="anime-card-26.png" alt="Tonikaku Kawaii: Seifuku">
+                    <div class="anime-info">
+                        <h4>Tonikaku Kawaii: Seifuku</h4>
+                        <p>Especial-22min</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© Copyright Better Anime 2023 - Todos os direitos reservados</p>
+            <a href="#" class="download-button">
+                <img src="play-icon.png" alt="Download">
+                Baixe o Aplicativo
+            </a>
+            <div class="social-media">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+            </div>
+            <div class="footer-logo">
+                <img src="footer-logo.png" alt="Better Anime">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
