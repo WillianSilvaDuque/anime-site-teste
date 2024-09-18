@@ -1,113 +1,20 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
+body{
+    background-color: black;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+h1{
+    color: #fc5203;
 }
 
-header {
-    background-color: #fff;
-    padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+.cor1{
+    background-color: #001ca6;
 }
 
-.logo {
-    height: 50px;
-    float: left;
+.cor2{
+    color: white;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    float: right;
-}
-
-nav li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.hero {
-    background-color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    color: #666;
-}
-
-.button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.popular-animes,
-.featured-animes {
-    padding: 50px 0;
-    background-color: #fff;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.anime-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-}
-
-.anime-card img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.anime-card h3 {
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.anime-card p {
-    margin-bottom: 10px;
-    color: #666;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+img{
+    height: 400px !important;
+    width: 300px !important;
 }
