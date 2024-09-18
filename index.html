@@ -1,70 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anime Hub</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
+    <title>Anime Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav class="nav-bar">
-      <ul>
-        <li><a href="#" class="nav-link">Home</a></li>
-        <li><a href="#" class="nav-link">Animes</a></li>
-        <li><a href="#" class="nav-link">Notícias</a></li>
-        <li><a href="#" class="nav-link">Contato</a></li>
-      </ul>
-      <div class="nav-search">
-        <input type="search" placeholder="Pesquisar...">
-        <button class="nav-search-btn">Buscar</button>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section class="anime-list">
-      <h2>Animes Populares</h2>
-      <ul>
-        <li>
-          <img src="anime1.jpg" alt="Anime 1" class="anime-img">
-          <h3>Attack on Titan</h3>
-          <p>Um mundo onde humanos vivem em cidades cercadas por paredes para se protegerem de titãs gigantes.</p>
-          <button class="anime-btn">Ver mais</button>
-        </li>
-        <li>
-          <img src="anime2.jpg" alt="Anime 2" class="anime-img">
-          <h3>Naruto</h3>
-          <p>Uma história de um jovem ninja que sonha em se tornar o líder de seu vilarejo.</p>
-          <button class="anime-btn">Ver mais</button>
-        </li>
-        <!-- Add more anime cards here -->
-      </ul>
-    </section>
-    <section class="news-list">
-      <h2>Notícias Recentes</h2>
-      <ul>
-        <li>
-          <h3>Novo anime de Dragon Ball anunciado!</h3>
-          <p>Autor: <a href="#" class="news-author">Crunchyroll</a></p>
-          <p>Data: 22/02/2023</p>
-        </li>
-        <li>
-          <h3>Anime de One Piece ganha nova temporada!</h3>
-          <p>Autor: <a href="#" class="news-author">Anime News Network</a></p>
-          <p>Data: 15/02/2023</p>
-        </li>
-        <!-- Add more news items here -->
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2023 Anime Hub</p>
-    <ul class="footer-links">
-      <li><a href="#" class="footer-link">Termos de Uso</a></li>
-      <li><a href="#" class="footer-link">Política de Privacidade</a></li>
-      <li><a href="#" class="footer-link">Contato</a></li>
-    </ul>
-  </footer>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo do site -->
+                <img src="logo.png" alt="Logo do site">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <select name="categoria" id="categoria">
+                        <option value="">Selecione uma categoria</option>
+                        <option value="romance">Romance</option>
+                        <option value="acao">Ação</option>
+                        <!-- Add more options here -->
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="anime-list">
+            <!-- Animes aleatórios -->
+            <div class="anime">
+                <img src="anime1.jpg" alt="Anime 1">
+                <h2>Anime 1</h2>
+            </div>
+            <div class="anime">
+                <img src="anime2.jpg" alt="Anime 2">
+                <h2>Anime 2</h2>
+            </div>
+            <!-- Add more animes here -->
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
