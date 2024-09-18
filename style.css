@@ -1,4 +1,4 @@
-/* Estilos globais */
+/* Global styles */
 
 * {
   box-sizing: border-box;
@@ -13,23 +13,32 @@ body {
   background-color: #f9f9f9;
 }
 
-/* Estilos para o cabeçalho */
+/* Navigation menu */
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
-  text-align: center;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-header h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
+nav li {
+  margin-right: 20px;
 }
 
-/* Estilos para o conteúdo */
+nav a {
+  color: #337ab7;
+  text-decoration: none;
+}
 
-main {
+nav a:hover {
+  color: #23527c;
+}
+
+/* Anime list section */
+
+.anime-list {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
@@ -37,29 +46,35 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-main h2 {
+.anime-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.anime-list li {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.anime-list img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.anime-list h3 {
   font-size: 18px;
   margin-bottom: 10px;
 }
 
-main p {
+.anime-list p {
   margin-bottom: 20px;
 }
 
-/* Estilos para os links */
-
-a {
-  text-decoration: none;
-  color: #337ab7;
-}
-
-a:hover {
-  color: #23527c;
-}
-
-/* Estilos para os botões */
-
-button {
+.anime-list button {
   background-color: #337ab7;
   color: #fff;
   border: none;
@@ -68,6 +83,46 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.anime-list button:hover {
   background-color: #23527c;
+}
+
+/* News list section */
+
+.news-list {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news-list li {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.news-list h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.news-list p {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
