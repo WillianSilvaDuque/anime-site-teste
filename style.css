@@ -1,169 +1,101 @@
 /* Global styles */
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
-/* Navigation menu */
+/* Header styles */
 
-.nav-bar {
-  background-color: #333;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header {
+    background-color: #333;
+    padding: 1em;
+    text-align: center;
 }
 
-.nav-bar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav-bar li {
-  margin-right: 20px;
+.logo {
+    margin-right: 20px;
 }
 
-.nav-link {
-  color: #fff;
-  text-decoration: none;
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
-.nav-link:hover {
-  color: #ccc;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-.nav-search {
-  display: flex;
-  align-items: center;
-  margin-left: 20px;
+li {
+    margin-right: 20px;
 }
 
-.nav-search input[type="search"] {
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  width: 200px;
+li a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.nav-search-btn {
-  background-color: #337ab7;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+li a:hover {
+    color: #ccc;
 }
 
-.nav-search-btn:hover {
-  background-color: #23527c;
+select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-/* Anime list section */
+/* Anime list styles */
 
 .anime-list {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.anime-list ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.anime {
+    margin: 20px;
+    width: 200px;
 }
 
-.anime-list li {
-  margin-bottom: 20px;
-  padding: 20px;
-  border-bottom: 1px solid #ddd;
+.anime img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.anime-img {
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
-  border-radius: 10px;
+.anime h2 {
+    font-size: 18px;
+    margin-top: 10px;
 }
 
-.anime-btn {
-  background-color: #337ab7;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
+/* Responsive design */
 
-.anime-btn:hover {
-  background-color: #23527c;
-}
-
-/* News list section */
-
-.news-list {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.news-list ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.news-list li {
-  margin-bottom: 20px;
-  padding: 20px;
-  border-bottom: 1px solid #ddd;
-}
-
-.news-author {
-  color: #337ab7;
-  text-decoration: none;
-}
-
-.news-author:hover {
-  color: #23527c;
-}
-
-/* Footer */
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
-
-.footer-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-link {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-link:hover {
-  color: #ccc;
+@media (max-width: 768px) {
+    .anime-list {
+        flex-direction: column;
+    }
+    .anime {
+        margin: 10px;
+    }
 }
