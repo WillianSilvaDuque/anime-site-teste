@@ -2,70 +2,76 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale =1.0">
-    <title>Anime Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime World</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <!-- Logo do site -->
-                <img src="logo.png" alt="Logo do site">
-            </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Animes</a></li>
-                <li><a href="#">Novos Episódios</a></li>
-                <li><a href="#">Animes Populares</a></li>
-                <li><a href="#">Sobre</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <img src="logo.png" alt="Logo do Site" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Animes</a></li>
+                    <li><a href="#">Novos Episódios</a></li>
+                    <li><a href="#">Animes Populares</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="hero">
-            <div class="hero-content">
+            <div class="container">
                 <h1>Explore o mundo dos animes</h1>
-                <p>Encontre seus animes favoritos e descubra novos</p>
-                <button>Ver mais</button>
+                <p>Encontre seus animes favoritos e descubra novos.</p>
+                <a href="#" class="button">Ver mais</a>
             </div>
         </section>
-        <section class="anime-list">
-            <h2>Animes Populares</h2>
-            <div class="anime-grid">
-                <div class="anime">
-                    <img src="anime1.jpg" alt="Anime 1">
-                    <h3>Anime 1</h3>
-                    <p>Episódios: 12</p>
-                    <p>Categoria: Ação</p>
-                </div>
-                <div class="anime">
-                    <img src="anime2.jpg" alt="Anime 2">
-                    <h3>Anime 2</h3>
-                    <p>Episódios: 24</p>
-                    <p>Categoria: Romance</p>
-                </div>
-                <!-- Add more animes here -->
+        <section class="popular-animes">
+            <div class="container">
+                <h2>Animes Populares</h2>
+                <div class="grid">
+                    <div class="anime-card">
+                        <img src="anime1.jpg" alt="Anime 1">
+                        <h3>Anime 1</h3>
+                        <p>Episódios: 12</p>
+                        <p>Categoria: Ação</p>
+                    </div>
+                    <div class="anime-card">
+                        <img src="anime2.jpg" alt="Anime 2">
+                        <h3>Anime 2</h3>
+                        <p>Episódios: 24</p>
+                        <p>Categoria: Romance</p>
+                    </div>
+                    </div>
             </div>
         </section>
         <section class="featured-animes">
-            <h2>Animes em Destaque</h2>
-            <div class="featured-anime-grid">
-                <div class="featured-anime">
-                    <img src="featured-anime1.jpg" alt="Anime em Destaque 1">
-                    <h3>Anime em Destaque 1</h3>
-                    <p>Episódios: 12</p>
-                    <p>Categoria: Ação</p>
-                </div>
-                <div class="featured-anime">
-                    <img src="featured-anime2.jpg" alt="Anime em Destaque 2">
-                    <h3>Anime em Destaque 2</h3>
-                    <p>Episódios: 24</p>
-                    <p>Categoria: Romance</p>
+            <div class="container">
+                <h2>Animes em Destaque</h2>
+                <div class="grid">
+                    <div class="anime-card">
+                        <img src="anime3.jpg" alt="Anime em Destaque 1">
+                        <h3>Anime em Destaque 1</h3>
+                        <p>Episódios: 12</p>
+                        <p>Categoria: Ação</p>
+                    </div>
+                    <div class="anime-card">
+                        <img src="anime4.jpg" alt="Anime em Destaque 2">
+                        <h3>Anime em Destaque 2</h3>
+                        <p>Episódios: 24</p>
+                        <p>Categoria: Romance</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <script src="script.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Anime World. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
