@@ -1,20 +1,219 @@
-body{
-    background-color: black;
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #181818;
+    color: #fff;
 }
 
-h1{
-    color: #fc5203;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.cor1{
-    background-color: #001ca6;
+header {
+    background-color: #282828;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.cor2{
-    color: white;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-img{
-    height: 400px !important;
-    width: 300px !important;
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #383838;
+    color: #fff;
+    font-size: 16px;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    margin-left: 5px;
+}
+
+.search-bar img {
+    height: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.featured {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.featured-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.featured-content img {
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.featured-info {
+    text-align: left;
+}
+
+.featured-info h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.featured-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.featured-info button {
+    background-color: #e04f46;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.see-more {
+    text-decoration: none;
+    color: #e04f46;
+    font-size: 16px;
+}
+
+.latest-releases {
+    padding: 50px 0;
+}
+
+.latest-releases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.anime-card {
+    background-color: #282828;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.anime-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.anime-info {
+    padding: 15px;
+}
+
+.anime-info h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.anime-info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #a0a0a0;
+}
+
+footer {
+    background-color: #282828;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #e04f46;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.download-button img {
+    margin-right: 10px;
+    height: 20px;
+}
+
+.social-media {
+    margin-top: 15px;
+}
+
+.social-media a {
+    margin: 0 5px;
+}
+
+.social-media img {
+    height: 25px;
+}
+
+.footer-logo {
+    margin-top: 15px;
+}
+
+.footer-logo img {
+    height: 30px;
 }
