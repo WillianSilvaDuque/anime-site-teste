@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
-.anime-em-destaque{
-
-    background: linear-gradient( to right, rgba(0, 0, 0, 0.603) -25rem, transparent), linear-gradient(to top, black 1rem, transparent ), url(/assets/images/banner-patrasche.png);
-    height: 850px;
-    background-size: cover;
-}
 
 .logo-top{
 
@@ -158,7 +152,7 @@
     margin-top: 20px;
     background: linear-gradient( to top, rgba(0, 0, 0, 0.603) -25rem, transparent), linear-gradient(to top, black 1rem, transparent );
     height: 200px;
-    box-shadow: 0 10px 20px rgb(255, 0, 0), 0 6px 6px rgb(255, 0, 0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.027), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .contato{
